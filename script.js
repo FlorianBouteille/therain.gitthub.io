@@ -110,7 +110,7 @@ function draw()
         push();
         translate(platforms[i].position.x, platforms[i].position.y);
         rotate(i* PI/6);
-        rect(0, 0, 300, 20);
+        rect(0, 0, 150, 20);
         pop();
     }
     // for (i in boxes)
