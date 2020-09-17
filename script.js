@@ -47,7 +47,7 @@ function setup()
     sliderGroundColor.position(W - 210, H - 70);
     toggleButton = createButton("(^.^)");
     toggleButton.position(W/2, H - 50);
-    toggleButton.mousePressed(changeForm);
+    toggleButton.mousePressed(callClear);
     //ground = Bodies.rectangle(W/2, H - 100, W-10, 10, {isStatic : true});
    // World.add(myWorld, ground);
     for (i = 0; i < 25; i++)
@@ -59,7 +59,10 @@ function setup()
     strokeWeight(0);
     noStroke();
 }
-
+function callClear()
+{
+    clear();
+}
 function changeForm()
 {
     console.log("à coder");
