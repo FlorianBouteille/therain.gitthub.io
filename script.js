@@ -37,7 +37,7 @@ function setup()
     sliderFriction.position(10, H - 40);
     sliderRestitution = createSlider(0, 1, 0, 0.01);
     sliderRestitution.position(10, H - 70);
-    sliderSpeed = createSlider(0, 10, 5, 1);
+    sliderSpeed = createSlider(0, 18, 5, 1);
     sliderSpeed.position(210, H - 70);
     sliderSize = createSlider(0, 25, 0, 0.5);
     sliderSize.position(210, H - 40 );
@@ -47,7 +47,7 @@ function setup()
     sliderGroundColor.position(W - 210, H - 70);
     toggleButton = createButton("(^.^)");
     toggleButton.position(W/2, H - 50);
-    toggleButton.mousePressed(callClear);
+    toggleButton.mousePressed(clear());
     //ground = Bodies.rectangle(W/2, H - 100, W-10, 10, {isStatic : true});
    // World.add(myWorld, ground);
     for (i = 0; i < 25; i++)
